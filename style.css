@@ -45,3 +45,103 @@ button{
 
 
 }
+.form-section{
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    border: 1px solid #eee;
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+#trip-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#trip-form label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+    font-size: 14px;
+}
+
+#trip-form input, 
+#trip-form textarea {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#trip-form input:focus, 
+#trip-form textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+#trip-form textarea {
+    resize: vertical;
+    height: 85px;
+}
+
+#trip-form button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.2s ease;
+}
+
+#trip-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.listing-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.listing-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#empty-state {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    color: #777;
+    font-style: italic;
+}
+
+#trips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+    text-align: left;
+}
+}

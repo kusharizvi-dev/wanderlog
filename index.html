@@ -22,7 +22,31 @@
             <p>Welcome to Wanderlog,your ultimate digital travel journal.Document your journeys and discover new places.</p>
             <button>Explore Now</button>
             </section>
-            
+          <section class="form-section">
+            <h2>Add a New Trip</h2>
+            <form id="trip-form">
+                <input type ="hidden" id="trip-id">
+                <label>Trip Title:</label>
+                <input type="text" id=trip-title required placeholder="e.g.,Summer Vacation">
+                <label>Destination:</label>
+                <input type="text" id="trip-destination" required placeholder="e.g.,Paris">
+                <label>Date:</label>
+                <input type="date" id="trip-date" required>
+                <label>Cover Image URL:</label>
+                <input type="url" id="trip-image" placeholder="https://example.com/image.jpg">
+                <label>Notes:</label>
+                <textarea id="trip-notes" placeholder="Write something..."></textarea>
+                <button type="submit" id="submit-btn"></button>
+            </form>
+          </section>  
+          <section class="listing-section">
+            <h2>My Destinations</h2>
+            <div id="empty-state">
+                <p>No trips added yet!Start by adding your first journey above.</p>
+            </div>
+            <div id="trips-grid"></div>
+
+          </section>
     </main>
     <footer>
         <p>&copy; 2026 Wanderlog.All rights reserved.</p>
